@@ -5,7 +5,7 @@ let weekdays = [
   "Monday",
   "Tuesday,",
   "Wednesday",
-  "Thurday",
+  "Thursday",
   "Friday",
   "Saturday",
   "Sunday",
