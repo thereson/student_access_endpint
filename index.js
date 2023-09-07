@@ -11,12 +11,12 @@ let weekdays = [
   "sunday",
 ];
 
-server.get("/:slack_name/:track", (req, res) => {
+server.get("/api", (req, res) => {
   let responce = {
-    slack_name: req.params.slack_name,
+    slack_name: req.query.slack_name,
     current_day: weekdays[new Date().getDay() - 1],
     utc_time: new Date(),
-    track: req.params.track,
+    track: req.query.track,
     github_file_url:
       "https://github.com/thereson/student_access_endpint/index.js",
     github_repo_url: "https://github.com/thereson/student_access_endpint",
