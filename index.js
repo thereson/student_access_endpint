@@ -2,13 +2,13 @@ const express = require("express");
 
 let server = express();
 let weekdays = [
-  "monday",
-  "tuesday,",
-  "wednesday",
-  "thurday",
-  "friday",
-  "saturday",
-  "sunday",
+  "Monday",
+  "Tuesday,",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday",
 ];
 let [first, last] = new Date().toISOString().split(".");
 
