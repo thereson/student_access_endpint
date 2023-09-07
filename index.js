@@ -2,13 +2,13 @@ const express = require("express");
 
 let server = express();
 let weekdays = [
-  "monday",
-  "tuesday,",
-  "wednesday",
-  "thurday",
-  "friday",
-  "saturday",
-  "sunday",
+  "Monday",
+  "Tuesday,",
+  "Wednesday",
+  "Thurday",
+  "Friday",
+  "Saturday",
+  "Sunday",
 ];
 
 server.get("/api", (req, res) => {
