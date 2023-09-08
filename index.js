@@ -23,7 +23,7 @@ server.get("/api", (req, res) => {
     github_repo_url: "https://github.com/thereson/student_access_endpint",
     status_code: 200,
   };
-  res.send(JSON.stringify(responce));
+  res.json(responce);
 });
 
 server.listen(9000, () => {
