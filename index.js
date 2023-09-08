@@ -11,13 +11,15 @@ let weekdays = [
   "Sunday",
 ];
 let [first, last] = new Date().toISOString().split(".");
-let now = first.replace("-", ":");
+
+first = first.replace(/(\r\n|\n|\r)/g, "-");
+
 server.get("/api", (req, res) => {
   let responce = {
     slack_name: req.query.slack_name,
     current_day: weekdays[new Date().getDay() - 1],
     track: req.query.track,
-    utc_time: "2023:09:08T03:12:30Z",
+    utc_time: first + "Z",
     github_file_url:
       "https://github.com/thereson/student_access_endpint/index.js",
     github_repo_url: "https://github.com/thereson/student_access_endpint",
